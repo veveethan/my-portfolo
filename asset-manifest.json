@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.a706867f.css",
-    "main.js": "/my-portfolio/static/js/main.64dcd25c.js",
-    "static/media/intro-bg.jpg": "/my-portfolio/static/media/intro-bg.ee89e53e1f2482c9f880.jpg",
-    "static/media/programmer-night.jpg": "/my-portfolio/static/media/programmer-night.ec71d126c65224145b23.jpg",
-    "static/media/VEVEPIC.png": "/my-portfolio/static/media/VEVEPIC.c1b65f952dac08242563.png",
-    "index.html": "/my-portfolio/index.html",
-    "main.a706867f.css.map": "/my-portfolio/static/css/main.a706867f.css.map",
-    "main.64dcd25c.js.map": "/my-portfolio/static/js/main.64dcd25c.js.map"
+    "main.css": "/my-portfolo/static/css/main.07e23c50.css",
+    "main.js": "/my-portfolo/static/js/main.6ddde010.js",
+    "static/media/intro-bg.jpg": "/my-portfolo/static/media/intro-bg.ee89e53e1f2482c9f880.jpg",
+    "static/media/programmer-night.jpg": "/my-portfolo/static/media/programmer-night.ec71d126c65224145b23.jpg",
+    "static/media/VEVEPIC.png": "/my-portfolo/static/media/VEVEPIC.c1b65f952dac08242563.png",
+    "index.html": "/my-portfolo/index.html",
+    "main.07e23c50.css.map": "/my-portfolo/static/css/main.07e23c50.css.map",
+    "main.6ddde010.js.map": "/my-portfolo/static/js/main.6ddde010.js.map"
   },
   "entrypoints": [
-    "static/css/main.a706867f.css",
-    "static/js/main.64dcd25c.js"
+    "static/css/main.07e23c50.css",
+    "static/js/main.6ddde010.js"
   ]
 }
