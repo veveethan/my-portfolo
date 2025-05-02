@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 import { FaMapMarkerAlt, FaPhoneAlt, FaGlobe } from 'react-icons/fa';
 import './Contact.css';
 import axios from 'axios';
-
+import emailjs from '@emailjs/browser'
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -16,7 +16,27 @@ const Contact = () => {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
   };
-
+const sendEmail = async(e)=>{
+  e.preventDefault();
+  try {
+    await emailjs.send('service_r2nrqro' , 'template_brljfcj' , {
+      from_name:formData.name,
+      to_name:'Veveethan',
+      from_email:formData.email,
+      to_email:'veveethank@gmail.com',
+      message:formData.message
+    } , 'IGmdgnmsqI0t62oRT');
+    alert('Email sent Successfully😊')
+    setFormData({
+      name: '',
+      email: '',
+      message: '',
+    });
+  } catch (error) {
+    alert('Failed to send message. Please try again.');
+    console.error('Error sending message:', error);
+  }
+}
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -49,7 +69,7 @@ const Contact = () => {
         <h1 className="contact-title">Get in Touch</h1>
 
         {/* Contact Form */}
-        <form className="contact-form" onSubmit={handleSubmit}>
+        <form className="contact-form" onSubmit={sendEmail}>
           <div className="form-group floating-label">
             <input
               type="text"
